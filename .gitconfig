@@ -16,3 +16,5 @@
 	st = status
 	br = branch
 	ci = commit
+[push]
+	default = simple
