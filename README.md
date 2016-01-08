@@ -8,5 +8,6 @@ setup
 
 ```
 ./setup_links.sh
+exex $SHELL -l
 ```
 
