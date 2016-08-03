@@ -2,7 +2,7 @@
 	name = Shinya Kamiaka
 	email = s-kamiaka@sakura.ad.jp
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/s-kamiaka/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

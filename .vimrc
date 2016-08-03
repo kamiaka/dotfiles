@@ -1,6 +1,7 @@
 
-" シンタックスハイライト
-syntax on
+"---------------------------
+" Setting 
+"---------------------------
 
 "新しい行のインデントを現在行と同じにする
 set autoindent
@@ -43,4 +44,28 @@ set smartindent
 
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
 set smarttab
+
+"---------------------------
+" Start Neobundle Settings.
+"---------------------------
+
+set runtimepath^=~/.vim/bundle/neobundle.vim/
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" Neobundle自体を自分で管理
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Install EditorConfig
+NeoBundle 'editorconfig/editorconfig-vim'
+
+call neobundle#end()
+
+
+"---------------------------
+" 
+"---------------------------
+
+" ハイライト
+syntax on
 
