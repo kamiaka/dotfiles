@@ -1,4 +1,16 @@
 *~
 .DS_Store
+runner.conf
+*.swp
+.python-version
+
+# Folders
 .vscode
+tmp/
+
+# redis
+dump.rdb
+
+# utilities
+*.mynote
 

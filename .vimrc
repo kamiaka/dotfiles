@@ -59,8 +59,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Install EditorConfig
 NeoBundle 'editorconfig/editorconfig-vim'
 
-call neobundle#end()
+" Install Go
+NeoBundle 'fatih/vim-go'
 
+call neobundle#end()
 
 "---------------------------
 " 
@@ -68,4 +70,4 @@ call neobundle#end()
 
 " ハイライト
 syntax on
-
+colorscheme monokai
