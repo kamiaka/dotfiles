@@ -1,6 +1,6 @@
 [user]
 	name = Shinya Kamiaka
-	email = s-kamiaka@sakura.ad.jp
+	email = shinya@kamiaka.net
 [core]
 	excludesfile = /Users/s-kamiaka/.gitignore_global
 [difftool "sourcetree"]

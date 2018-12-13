@@ -1,3 +1,18 @@
+"---------------------------
+" Vundle
+"---------------------------
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'editorconfig/editorconfig-vim'
+
+call vundle#end()
+filetype plugin indent on
 
 "---------------------------
 " Setting 
@@ -46,26 +61,7 @@ set smartindent
 set smarttab
 
 "---------------------------
-" Start Neobundle Settings.
-"---------------------------
-
-set runtimepath^=~/.vim/bundle/neobundle.vim/
-
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Neobundle自体を自分で管理
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Install EditorConfig
-NeoBundle 'editorconfig/editorconfig-vim'
-
-" Install Go
-NeoBundle 'fatih/vim-go'
-
-call neobundle#end()
-
-"---------------------------
-" 
+" Theme and Syntax.
 "---------------------------
 
 " ハイライト
