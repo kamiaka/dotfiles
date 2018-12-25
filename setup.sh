@@ -1,0 +1,1 @@
+/Users/s-kamiaka/setup.sh
