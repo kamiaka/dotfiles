@@ -85,12 +85,18 @@ if !(which go > /dev/null 2>&1); then
 fi
 
 
-# Setup git completion.
+# Setup completions.
 
 __title "git-completion"
 
 if [ ! -f ~/.git-completion.bash ]; then
   curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
+fi
+
+__title "npx-completion"
+
+fi [ ! -f ~/.npx-completion.bash ]; then
+  curl https://raw.githubusercontent.com/kamiaka/bash-completion/master/npx-completion.bash > ~/.npx-completion.bash
 fi
 
 

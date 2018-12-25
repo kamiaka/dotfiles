@@ -56,3 +56,8 @@ if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
 
+# npx
+if [ -f ~/.npx-completion.bash ]; then
+  source ~/.npx-completion.bash
+fi
+
