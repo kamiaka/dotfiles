@@ -11,12 +11,19 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'editorconfig/editorconfig-vim'
 
+Plugin 'fatih/vim-go'
+
+Plugin 'sickill/vim-monokai'
+
 call vundle#end()
 filetype plugin indent on
 
 "---------------------------
 " Setting 
 "---------------------------
+
+" Encoding
+set encoding=utf-8
 
 "新しい行のインデントを現在行と同じにする
 set autoindent
