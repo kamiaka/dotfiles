@@ -12,7 +12,7 @@
 [ghq]
 	root = ~/src
 [alias]
-	 a = add
+	a = add
 	c = commit
 	br = branch
 	cm = commit -m
@@ -20,6 +20,7 @@
 	st = status
 	up = push -u origin
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	amend = commit --amend --no-edit
 	alias = config --get-regexp ^alias\\.
 [push]
 	default = simple
