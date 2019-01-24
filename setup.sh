@@ -87,16 +87,22 @@ fi
 
 # Setup completions.
 
+__title "completion"
+
+if [ ! -d ~/.bash ]; then
+  mkdir ~/.bash
+fi
+
 __title "git-completion"
 
-if [ ! -f ~/.git-completion.bash ]; then
-  curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.git-completion.bash
+if [ ! -f ~/.bash/git-completion.bash ]; then
+  curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash > ~/.bash/git-completion.bash
 fi
 
 __title "npx-completion"
 
-fi [ ! -f ~/.npx-completion.bash ]; then
-  curl https://raw.githubusercontent.com/kamiaka/bash-completion/master/npx-completion.bash > ~/.npx-completion.bash
+if [ ! -f ~/.bash/npx-completion.bash ]; then
+  curl https://raw.githubusercontent.com/kamiaka/bash-completion/master/npx-completion.bash > ~/.bash/npx-completion.bash
 fi
 
 

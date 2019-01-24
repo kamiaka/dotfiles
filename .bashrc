@@ -38,7 +38,7 @@ alias ls='ls -G'
 alias ll='ls -l'
 
 # diff using unified format and using colordiff
-if [ -x `which colordiff` ]; then
+if which colordiff > /dev/null 2>&1; then
   alias diff='colordiff -u'
 else
   alias diff='diff -u'
@@ -52,12 +52,12 @@ alias ssh-euc='cocot -t UTF-8 -p EUC-JP ssh'
 # 
 
 # git
-if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
+if [ -f ~/.bash/git-completion.bash ]; then
+  source ~/.bash/git-completion.bash
 fi
 
 # npx
-if [ -f ~/.npx-completion.bash ]; then
-  source ~/.npx-completion.bash
+if [ -f ~/.bash/npx-completion.bash ]; then
+  source ~/.bash/npx-completion.bash
 fi
 
